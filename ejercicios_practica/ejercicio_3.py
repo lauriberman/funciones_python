@@ -15,11 +15,19 @@
 
 # --------------------------------
 
+def ordenar(numeros):
+    numeros_ordenados = sorted(numeros)
+    return numeros_ordenados
+
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
     numeros = [2, 4, 10, 8, 12, 6]
+
+    lista_ordenada = ordenar(numeros)
+
+    print('Lista ordenada:', lista_ordenada)
 
     # Alumno: Crear la función "ordenar"
 

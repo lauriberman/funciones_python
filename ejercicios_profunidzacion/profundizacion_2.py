@@ -37,20 +37,30 @@ en la lista pueden usar el método nativo de list "count"
 # Aquí copiar la función "lista_aleatoria"
 # ya elaborada en el ejercicio anterior
 
+def lista_aleatoria(inicio, fin, cantidad):
+    lista_numeros = []
+    for numero in range(cantidad):
+        numero = random.randrange(inicio, fin +1)
+        lista_numeros.append(numero)
+    return lista_numeros
 
 # --------------------------------
 
 # --------------------------------
 # Aquí dentro definir la función contar
 
+def contar(lista_numeros, numero):
+    cantidad_numero = lista_numeros.count(numero)
+    return cantidad_numero
 
+# --------------------------------
 # --------------------------------
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
     inicio = 0
-    fin = 10
+    fin = 6
     cantidad = 5
 
     # Alumno: Utilizar la función "lista_aleatoria"
@@ -59,8 +69,12 @@ if __name__ == '__main__':
 
     # lista_numeros = lista_aleatoria()
 
+    lista_numeros = lista_aleatoria(inicio, fin, cantidad)
+
     # Imprimir en pantalla "lista_numeros" que tendrá
     # los valores retornado por la función "lista_aleatoria":
+
+    print('La lista de números es:', lista_numeros)
 
     # print(lista_numeros)
 
@@ -68,6 +82,10 @@ if __name__ == '__main__':
     # en la lista aleatoria creada
     # cantidad_tres = contar(lista_numeros, 3)
 
+    cantidad_tres = contar(lista_numeros, 3)
+
     # print(cantidad_tres)
+
+    print('La cantidad de veces que aparece en la lista el número 3 es:', cantidad_tres)
 
     print("terminamos")

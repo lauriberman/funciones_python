@@ -28,6 +28,3 @@ if __name__ == '__main__':
     print("Cantidad de productos comprados:", cantidad)
 
     print("terminamos")
-
-
-
